@@ -11,28 +11,15 @@ git clone this repo
 stream run app.py
 
 ## Motivation
-People often receive many emails, daily of course. I was wondering if LLM sysytem could automate on this process by providing quality feedback.
-Also after some research, people really do spent lots of times on emailing(business related).
+Would it be great if I can have a document assistant that can asnwers my questions or aid my reading about a pdf doucment?
 
-https://hbr.org/2019/01/how-to-spend-way-less-time-on-email-every-day
-
-<Goal>
-  
-Create a system that is capable of drafting responses to common business emails, such as customer inquiries or partnership requests.
-
-
-
+While learning to adapt RAG(retrieval Augmented Generation) to LLM applications, I want to experiement on building a document assitant.
 
 
 ## Evaluation
-Multiple success metrics were considered: Track the reduction in response time, increase in email handling capacity, and customer satisfaction with email interactions.
+To measure the performance of this LLM system, I compare the true answer(reference answer) with GPT's answer and attained average of 89% accuracies.
 
-For this project, I measure the time saved from using GPT compare to reading and responding on your own while maintaining a good quality.
-
-Idea: Comparing the time for reading + responding email on your own and the time LLM generate a response.
-
-
-On average, it saves about 32% of the time reading and writing emails.
+It is capable of answering questions such as: what is this document about, summary.
 
 ## Lesson Learned
 GPT-4-preview-1106 provide most reasoning and quality response due to updated knowledge (2023)
@@ -41,5 +28,5 @@ GPT-4 still good
 
 GPT-3.5.turbo-1106 is good but sometimes giving extra informations that are not relevant.
 
-Potentially: embed in email applications?
+RAG has many potentials as if you can feed a longer page documents without going over context limit...
 
